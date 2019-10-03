@@ -137,5 +137,7 @@ resources:
 
     CognitoAuthRoleArn:
       Value:
-        Ref: CognitoAuthRole
+        Fn::GetAtt:
+          - CognitoAuthRole
+          - Arn
 

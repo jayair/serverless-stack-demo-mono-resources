@@ -134,3 +134,8 @@ resources:
     IdentityPoolId:
       Value:
         Ref: CognitoIdentityPool
+
+    CognitoAuthRoleArn:
+      Value:
+        Ref: CognitoAuthRole
+

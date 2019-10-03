@@ -135,7 +135,9 @@ resources:
       Value:
         Ref: CognitoIdentityPool
 
-    CognitoAuthRoleArn:
+    CognitoAuthRole:
       Value:
         Ref: CognitoAuthRole
+      Export:
+        Name: ${self:custom.stage}-CognitoAuthRole
 
